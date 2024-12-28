@@ -1,0 +1,108 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+
+
+body{
+  background: #FBE9D0;
+  
+  height: 800px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery{
+  width: 1128px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.page-title {
+  animation: neonAnim 2s alternate-reverse infinite;
+  color: #874F41;
+  font-family: Garamond;
+  font-size: 57px;
+}
+
+@keyframes neonAnim {
+  from {
+    text-shadow:
+      0 0 37px rgba(135, 79, 65, .7),
+      0 0 67px rgba(135, 79, 65, .7),
+      0 0 127px rgba(135, 79, 65, .7);
+  }
+  to {
+    text-shadow:
+      0 0 32px rgba(135, 79, 65, .7),
+      0 0 47px rgba(135, 79, 65, .7),
+      0 0 87px rgba(135, 79, 65, .7);
+  }
+}
+
+
+.gallery-image{
+  width: 360px;
+  height: 200px;
+
+  transition: transform 250ms linear, box-shadow 250ms linear;
+}
+
+.gallery-item:hover .gallery-image{
+  transform: scale(1.1);
+  box-shadow: 1px -9px 287px -4px rgba(0,0,0,0.75);
+}
+
